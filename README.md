@@ -15,3 +15,11 @@ In your solution you must provide the following in your Github link account:
 
   Problem statement (description of the problem. Just copy what is stated here.
   Uploaded java codes for the solution.
+
+
+Explanation
+The SchoolManagementApp interface is the Target interface. It provides the common integrateSystem() method expected by the unified application.
+
+The AttendanceSystem, GradingSystem, and LibrarySystem classes are the Adaptees. Their existing methods have different names and therefore cannot directly satisfy the target interface.
+
+The three adapter classes implement SchoolManagementApp and contain references to their respective adaptees. When integrateSystem() is called, each adapter delegates the request to the appropriate adaptee method.
